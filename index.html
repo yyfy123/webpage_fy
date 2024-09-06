@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN"></html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>枫叶的个人网页</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+    }
+    /* * {
+      border: 1px solid black;
+    } */
+    .flex {
+      display: flex;
+    }
+    .skyblue {
+      background-color: #40bebe;
+    }
+    .flex1 {
+      flex: 1;
+    }
+    .column {
+      flex-direction: column;
+    }
+    .mg8 {
+      margin: 8px;
+    }
+    .mgr8 {
+      margin-right: 8px;
+    }
+    .mgt8 {
+      margin-top: 8px;
+    }
+    .shadow {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .font_white {
+      color: #f5f5f5;
+    }
+    .text {
+      text-align: justify;
+      font-size: 23px;
+      font-family: "宋体", serif;
+    }
+  </style>
+  <body class="flex">
+    <!--侧边栏-->
+    <div
+      style="box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"
+      class="skyblue flex1 flex column"
+    >
+      <!--头像-->
+      <div
+        style="
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+        "
+        class="skyblue flex1 flex"
+      >
+        <img
+          src="./oc.png"
+          alt="枫叶头像"
+          width="80px"
+          height="80px"
+          style="width: 100px; height: 100px; border-radius: 100%"
+        />
+      </div>
+      <!--简介-->
+      <div style="flex: 5; align-items: center" class="flex column">
+        <span class="font_white text">
+          你好，我是枫叶！这里是我的个人网站，我会在这里记录coding日常，旅行见闻，所思所想，还有oc。
+        </span>
+      </div>
+    </div>
+    <!--主界面-->
+    <div style="flex: 5" class="flex column">
+      <!--头部栏-->
+      <div
+        style="
+          height: 60px;
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+            rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        "
+        class="skyblue"
+      ></div>
+      <!--内容区-->
+      <div class="flex1 flex mg8">
+        <!--主要内容-->
+        <div style="flex: 3" class="flex column mgr8 shadow">
+          <!--欢迎-->
+          <div
+            style="flex: 1; align-items: center; justify-content: center"
+            class="flex mgt8 column shadow"
+          >
+            <span
+              style="
+                text-align: justify;
+                font-size: 35px;
+                font-family: Times, 'Times New Roman', Georgia, serif;
+                font-weight: bold;
+                color: #40bebe;
+              "
+            >
+              欢迎来到枫叶的个人网站！
+            </span>
+          </div>
+
+          <!--置顶-->
+          <div style="flex: 5" class="flex mgt8 shadow"></div>
+          <!--推荐-->
+          <div style="flex: 5" class="flex mgt8 shadow"></div>
+          <!--底部栏-->
+          <div
+            style="height: 60px; background-color: rgb(234, 234, 192)"
+            class="flex mgt8"
+          ></div>
+        </div>
+        <!--最新文章列表-->
+        <div style="flex: 1" class="flex column shadow"></div>
+      </div>
+    </div>
+  </body>
+</html>
