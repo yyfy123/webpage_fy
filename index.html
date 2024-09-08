@@ -10,9 +10,9 @@
       margin: 0;
       height: 100vh;
     }
-    * {
+    /* * {
       border: 1px solid black;
-    }
+    } */
     .flex {
       display: flex;
     }
@@ -47,6 +47,13 @@
       white-space: pre-wrap;
       text-indent: 50px;
     }
+    .nav {
+      text-align: ce;
+      font-size: 20px;
+      font-family: "宋体", serif;
+      white-space: pre-wrap;
+      text-indent: 0px;
+    }
     ul {
       list-style-type: none;
       margin: 0;
@@ -65,6 +72,7 @@
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
+      line-height: 20px;
     }
 
     li a:hover:not(.active) {
@@ -115,7 +123,7 @@
     <!--主界面-->
     <div style="flex: 5" class="flex column">
       <!--导航栏-->
-      <div
+      <!-- <div
         style="
           height: 40px;
           box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
@@ -124,74 +132,74 @@
           justify-content: stretch;
         "
         class="skyblue flex"
-      >
-        <ul style="list-style-type: none; margin: 0; padding: 0" class="flex1">
-          <!-- 首页 -->
-          <li style="display: inline">
-            <a
-              href="./index.html"
-              style="text-decoration-line: none"
-              class="flex1 font_white text active"
-              >首页</a
-            >
-          </li>
-          <!-- coding -->
-          <li style="display: inline">
-            <a
-              href="./coding.html"
-              style="text-decoration-line: none"
-              class="flex1 font_white text"
-              >coding</a
-            >
-          </li>
-          <!-- 碎碎念 -->
-          <li style="display: inline">
-            <a
-              href="./thought.html"
-              style="text-decoration-line: none"
-              class="flex1 font_white text"
-              >碎碎念</a
-            >
-          </li>
-          <!-- 日常 -->
-          <li style="display: inline">
-            <a
-              href="./daily.html"
-              style="text-decoration-line: none"
-              class="flex1 font_white text"
-              >日常</a
-            >
-          </li>
-          <!-- oc -->
-          <li style="display: inline">
-            <a
-              href="./oc.html"
-              style="text-decoration-line: none"
-              class="flex1 font_white text"
-              >oc</a
-            >
-          </li>
-          <!-- 旅行 -->
-          <li style="display: inline">
-            <a
-              href="./tour.html"
-              style="text-decoration-line: none"
-              class="flex1 font_white text"
-              >旅行</a
-            >
-          </li>
-          <!-- 诗词 -->
-          <li style="display: inline">
-            <a
-              href="./poem.html"
-              style="text-decoration-line: none"
-              class="flex1 font_white text"
-              >诗词</a
-            >
-          </li>
-          <li><a class="flex1 font_white text" href="#about">关于</a></li>
-        </ul>
-      </div>
+      > -->
+      <ul style="height: 40px">
+        <!-- 首页 -->
+        <li>
+          <a
+            href="./index.html"
+            style="text-decoration-line: none"
+            class="font_white nav active"
+            >首页</a
+          >
+        </li>
+        <!-- coding -->
+        <li>
+          <a
+            href="./coding.html"
+            style="text-decoration-line: none"
+            class="font_white nav"
+            >coding</a
+          >
+        </li>
+        <!-- 碎碎念 -->
+        <li>
+          <a
+            href="./thought.html"
+            style="text-decoration-line: none"
+            class="font_white nav"
+            >碎碎念</a
+          >
+        </li>
+        <!-- 日常 -->
+        <li>
+          <a
+            href="./daily.html"
+            style="text-decoration-line: none; text-align: center"
+            class="font_white nav"
+            >日常</a
+          >
+        </li>
+        <!-- oc -->
+        <li>
+          <a
+            href="./oc.html"
+            style="text-decoration-line: none"
+            class="font_white nav"
+            >oc</a
+          >
+        </li>
+        <!-- 旅行 -->
+        <li>
+          <a
+            href="./tour.html"
+            style="text-decoration-line: none"
+            class="font_white nav"
+            >旅行</a
+          >
+        </li>
+        <!-- 诗词 -->
+        <li>
+          <a
+            href="./poem.html"
+            style="text-decoration-line: none"
+            class="font_white nav"
+            >诗词</a
+          >
+        </li>
+        <li><a class="font_white nav" href="#about">关于</a></li>
+      </ul>
+      <!-- </div> -->
       <!--内容区-->
       <div class="flex1 flex mg8">
         <!--主要内容-->
